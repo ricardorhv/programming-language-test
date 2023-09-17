@@ -104,8 +104,13 @@ function adicionarProdutoNaLista(nome, valorBruto, valorFinal) {
 
 function quandoClicarNoBotao() {
   const nomeDoProduto = nomeDoProdutoInput.value;
-  const valorDoProduto = valorDoProdutoInput.value;
+  const valorDoProduto = Number(valorDoProdutoInput.value);
   let tipoDeDesconto = "";
+
+  if (nomeDoProduto.length === 0 || valorDoProduto === 0) {
+    alert("Insira as informações para executar a ação!")
+    return 
+  }
 
   for (
     var inputIndex = 0;
