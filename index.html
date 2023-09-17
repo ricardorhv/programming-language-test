@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Avaliação Bimestral</title>
+</head>
+<body>
+  <main>
+    <div class="text-group">
+      <h1>Calculadora de descontos</h1>
+      <p>
+        Insira um produto e escolha o tipo de desconto que você gostaria, em seguida você irá receber o valor final do produto com o desconto.
+      </p>
+    </div>
+
+    <div class="form">
+      <h3>Cadastro de produtos</h3>
+
+      <input type="text" 
+        placeholder="Insira o nome do produto" 
+        id="nomeDoProduto"
+      >
+      <input 
+        type="text"
+        placeholder="Insira o valor do produto"
+        id="valorDoProduto"
+      >
+
+      <span>Forma de pagamento</span>
+      <div class="radioGroup">
+        <div>
+          <label for="aVista">À vista (Desconto de 5%)</label>
+          <input 
+            name="tipoDeDesconto" 
+            id="aVista" 
+            type="radio"
+            value="aVista"
+            checked
+          >
+        </div>
+    
+        <div>
+          <label for="parcelado">Parcelado (Acréscimo de 5%) </label>
+          <input 
+            value="parcelado" 
+            name="tipoDeDesconto" 
+            id="parcelado" 
+            type="radio"
+          >
+        </div>
+      </div>
+
+      <div>
+        <label for="categoria">Categoria</label>
+        <select name="categoria" id="categoria">
+          <option value="salgado">Salgado</option>
+          <option value="doce">Doce</option>
+          <option value="bebida">Bebida</option>
+        </select>
+      </div>
+      <button id="btnCalcular">Calcular</button>
+    </div>
+
+    <table id="visualizacao"></table>
+    <table id="visualizacaoCategoria"></table>
+  </main>
+
+  <script src="./main.js" defer></script>
+</body>
+</html>
