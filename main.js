@@ -1,20 +1,5 @@
 /**
- * Você foi contratado para criar uma calculadora de descontos para uma cafeteria online. O objetivo é criar um programa em JavaScript que calcula o valor final de um produto após aplicar descontos.
-O programa deve atender aos seguintes requisitos:
-
-Crie no mínimo quatro funções, sendo duas delas com dois ou mais parâmetros.
-
-Implemente um cálculo de percentual para aplicar descontos nos produtos.
-
-Utilize uma ou mais das quatro operações matemáticas (+, -, *, /) em alguma parte do código.
-
-Utilize um comando switch...case para permitir ao usuário escolher o tipo de pagamento a ser efetuado(À vista com 5% de desconto ou parcelado com acréscimo de 5%)
-
-Utilize um comando for para iterar sobre uma lista de produtos e calcular o preço final com desconto para cada um deles.
-
-Utilize um comando while para validar a entrada do usuário para garantir que o valor do desconto seja válido (não negativo).
-
-Implemente um bloco if com else para lidar com casos em que o usuário não escolheu nenhum tipo de desconto ou inseriu um valor inválido.
+ * Você foi contratado para criar uma calculadora de descontos para uma cafeteria online. O objetivo é criar um programa em JavaScript que calcula o valor final de um produto após aplicar descontos. Além disso, você deve criar categorias pra esse produto e ao final mostrar uma tabela dos produtos e outra sendo cada categoria uma coluna, e cada produto uma linha.
  * 
  */
 
